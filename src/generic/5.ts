@@ -3,9 +3,16 @@
   Використовуйте generics, щоб цей інтерфейс міг працювати з будь-якими типами ключів та значень.
 */
 
+/*
 interface KeyValuePair {
-  key;
+  key ;
   value;
+}
+*/
+
+interface KeyValuePair<TKey, TValue> {
+  key: TKey;
+  value: TValue;
 }
 
 export {};
